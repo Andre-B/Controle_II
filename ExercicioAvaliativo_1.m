@@ -23,7 +23,7 @@ impulse(Gz)
 
 % Resposta ao degrau para computar o erro
 
-[y,t]=step(Gz,1000);
+[y,~]=step(Gz,1000);
 
 e=y(end)-1;
 
