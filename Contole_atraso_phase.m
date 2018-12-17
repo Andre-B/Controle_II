@@ -19,6 +19,7 @@ margin(Gz);
 omega_w1=0.354;
 omega_w0=0.1*omega_w1;
 
+
 omega_wp=omega_w0/(db2mag(2.43));
 
 % Montar controlador

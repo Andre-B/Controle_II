@@ -32,7 +32,7 @@ a1=(1-(mag_w1)*cosd(teta))/(omega_w1*mag_w1*sind(teta));
 b1=(cosd(teta)-mag_w1)/(omega_w1*sind(teta));
 
 % Montar controlador
-Dw=tf([a1 1],[b1 1]);
+Dw=tf([a1 1],[1 0]);
 
 % Discretização do controlador
 Dz=c2d(Dw,Ts,'tustin');
